@@ -93,7 +93,7 @@ if nick in df["Nickname"].values:
             , "Cantare una canzone di Lucio Corsi (No volevo essere un duro)"]
 
 
-    Bonus = st.pills("Malus", bonus, selection_mode="multi")
+    Bonus = st.pills("Bonus", bonus, selection_mode="multi")
 
     malus = ["persone arrivano in ritardo", "Lasciare bicchieri per terra o mezzi pieni", "Chiedere il voto di laurea", 
             "Lamentarsi", "Arriva la polizia", "Atteggiamenti scontrosi (NON SI FA!!!)", "Buttare roba nella fontana", 
