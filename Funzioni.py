@@ -82,32 +82,54 @@ def carica_stile():
             margin-bottom: 1rem;
             box-shadow: 0 0 15px #8a2be2;
         }
-        /* Pills neon */
-    .pill {
-            display: inline-block;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            margin: 4px;
-            color: #ffffff;
-            background: linear-gradient(90deg, #8a2be2, #00eaff);
-            box-shadow: 0 0 10px #8a2be2, 0 0 10px #00eaff;
-            text-shadow: 0 0 5px #000;
-            transition: 0.2s ease-in-out;
+        /* 🎮 STILE GAMING PER st.pills */
+
+        /* Contenitore dei pills */
+        div[data-testid="stPills"] {
+            background-color: transparent;
         }
 
-.pill:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px #00eaff, 0 0 15px #8a2be2;
-}
-        /* Input futuristici */
-        .stTextInput>div>div>input {
-            background-color: #1a1a1a;
-            color: #00eaff;
+        /* Ogni pill (non selezionato) */
+        div[data-testid="stPills"] button {
+            background: rgba(20, 20, 20, 0.9);
+            color: #e6e6e6;
+            border-radius: 999px;
             border: 1px solid #8a2be2;
-            border-radius: 8px;
+            padding: 0.35rem 0.9rem;
+            margin: 0.15rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 0 6px #8a2be255;
+            transition: 0.15s ease-in-out;
         }
+
+        /* Hover */
+        div[data-testid="stPills"] button:hover {
+            border-color: #00eaff;
+            box-shadow: 0 0 10px #00eaffaa;
+            transform: translateY(-1px);
+        }
+
+        /* Pill selezionato */
+        div[data-testid="stPills"] button[aria-pressed="true"] {
+            background: linear-gradient(90deg, #00eaff, #8a2be2);
+            color: #ffffff;
+            box-shadow: 0 0 15px #00eaff, 0 0 15px #8a2be2;
+            border-color: #00eaff;
+        }
+
+        
+        .pill:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 15px #00eaff, 0 0 15px #8a2be2;
+        }
+                /* Input futuristici */
+                .stTextInput>div>div>input {
+                    background-color: #1a1a1a;
+                    color: #00eaff;
+                    border: 1px solid #8a2be2;
+                    border-radius: 8px;
+                }
 
         /* Sidebar neon */
         section[data-testid="stSidebar"] {
