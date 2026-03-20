@@ -3,8 +3,10 @@ import os
 import sys
 import pandas as pd
 import io
-from Funzioni import download_to_s3, upload_to_s3 
+from Funzioni import download_to_s3, upload_to_s3, carica_stile
 import ast
+
+carica_stile()
 
 file_path = "persone.csv"
 # Setup path per importare moduli locali
