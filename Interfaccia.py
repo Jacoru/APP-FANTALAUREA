@@ -87,7 +87,7 @@ if nick in df["Nickname"].values:
                     "Non trovare il posto e quindi chiamare Jaco": -10
                     }
 
-    bonus = ["Bevuto un drink", "Fai gli auguri per la Laurea a Jaco (reiterabile)", "Giocare a \"Paolo Ruffini o Non Paolo Ruffini\" e fare almeno 6/10",
+    bonus = ["Bevuto un drink", "Fai gli auguri per la Laurea a Jaco", "Giocare a \"Paolo Ruffini o Non Paolo Ruffini\" e fare almeno 6/10",
             "Bere analcolici", "Fare foto alla festa (punti per ogni foto)", "Essere vestito di colori strani (viola, rosa, verde acqua)", "Essere in camicia", 
             "Giocare a NPC o non NPC e fare almeno 6/10", "Portare a Jacopo il suo drink preferito", "Risolvere il cubo di Rubik senza aiuti entro 5 minuti", 
             "Essere colui che guida e quindi non può bere", "Fermare/ andare da gente e fare un video di auguri per la mia Laurea", "Fare le rampe di scale 2 volte a salire e scendere", 
