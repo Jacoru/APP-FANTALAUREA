@@ -82,7 +82,25 @@ def carica_stile():
             margin-bottom: 1rem;
             box-shadow: 0 0 15px #8a2be2;
         }
+        /* Pills neon */
+    .pill {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin: 4px;
+            color: #ffffff;
+            background: linear-gradient(90deg, #8a2be2, #00eaff);
+            box-shadow: 0 0 10px #8a2be2, 0 0 10px #00eaff;
+            text-shadow: 0 0 5px #000;
+            transition: 0.2s ease-in-out;
+        }
 
+.pill:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #00eaff, 0 0 15px #8a2be2;
+}
         /* Input futuristici */
         .stTextInput>div>div>input {
             background-color: #1a1a1a;
