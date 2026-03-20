@@ -5,16 +5,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def get_s3_client():
-    return boto3.client(
+
+def download_to_s3():
+    s3 = boto3.client(
         "s3",
         aws_access_key_id=st.secrets["AWS_ACCESS_KEY_ID"],
         aws_secret_access_key=st.secrets["AWS_SECRET_ACCESS_KEY"],
         region_name=st.secrets["AWS_REGION"]
     )
-
-def download_to_s3():
-    s3 = get_s3_client()
 
     bucket_name = "fanta-laurea"
     object_key = "persone.csv"
@@ -24,6 +22,12 @@ def download_to_s3():
     return content
 
 def upload_to_s3(df):
+    s3 = boto3.client(
+        "s3",
+        aws_access_key_id=st.secrets["AWS_ACCESS_KEY_ID"],
+        aws_secret_access_key=st.secrets["AWS_SECRET_ACCESS_KEY"],
+        region_name=st.secrets["AWS_REGION"]
+    )
     buffer = io.StringIO()
     
     df.to_csv(buffer, index=False)
